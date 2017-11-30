@@ -1,6 +1,6 @@
 {
     "name": "danielbachhuber/wordcamp-talks-command",
-    "description": "Count how many times a given topic was presented at a WordCamp",
+    "description": "Counts how many times a given topic was presented at a WordCamp.",
     "type": "wp-cli-package",
     "homepage": "https://github.com/danielbachhuber/wordcamp-talks-command",
     "license": "MIT",
@@ -15,5 +15,10 @@
     },
     "require-dev": {
         "behat/behat": "~2.5"
+    },
+    "extra": {
+        "commands": [
+            "wordcamp-talks"
+        ]
     }
 }

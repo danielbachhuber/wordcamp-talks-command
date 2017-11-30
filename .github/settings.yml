@@ -1,6 +1,6 @@
 # Used by Probot Settings: https://probot.github.io/apps/settings/
 repository:
-  description: Count how many times a given topic was presented at a WordCamp.
+  description: Counts how many times a given topic was presented at a WordCamp.
 labels:
   - name: bug
     color: fc2929

@@ -1,7 +1,7 @@
 danielbachhuber/wordcamp-talks-command
 ======================================
 
-Count how many times a given topic was presented at a WordCamp
+Counts how many times a given topic was presented at a WordCamp.
 
 
 
@@ -9,7 +9,32 @@ Quick links: [Using](#using) | [Installing](#installing) | [Contributing](#contr
 
 ## Using
 
+~~~
+wp wordcamp-talks <topic> [--year=<year>]
+~~~
 
+Uses the WordCamp Central REST API to fetch a list of all WordCamps, and then
+searches a given topic against the sessions endpoint for WordCamp.
+
+```
+$ wp wordcamp-talks 'WP-CLI' --year=2017
+Generating camp URL list...
+[...]
+https://2017.jackson.wordcamp.org : 1
+- AJ Morris: Getting started with WP-CLI, a command-line tool to automate your life
+[...]
+Total camps for year specified: 120
+Camps with WP-CLI talks: 36
+Total talks (some camps may have multiple): 48
+```
+
+**OPTIONS**
+
+	<topic>
+		Topic to search for.
+
+	[--year=<year>]
+		Limit results to a specific year. Defaults to current year.
 
 ## Installing
 
