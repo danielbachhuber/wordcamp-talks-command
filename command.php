@@ -88,6 +88,6 @@ WP_CLI::add_command( 'wordcamp-talks', function( $args, $assoc_args ){
 
 	WP_CLI::log( '---' );
 	WP_CLI::log( 'Total camps for year specified: ' . count( $camp_urls ) );
-	WP_CLI::log( 'Camps with WP-CLI talks: ' . count( $camps_with_talks ) );
+	WP_CLI::log( 'Camps with "' . $topic . '" talks: ' . count( $camps_with_talks ) );
 	WP_CLI::log( 'Total talks (some camps may have multiple): ' . $total_talks );
 });
